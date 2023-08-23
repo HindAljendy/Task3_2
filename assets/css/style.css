@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* navbar */
+nav{
+    width: 100%;
+    height: 80px;
+    background-color:rgb(51, 51, 51);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 2;
+    
+
+}
+.first_nav_part{
+    display: flex;
+}
+.second_nav_part{
+    display: flex;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;  
+    margin: 0 20px;
+}
+/* hero */
+.hero{
+    width: 100%;
+    height:100vh;
+    background-image:url(./../images/giant-glass-building.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero h1{
+    width: max-content; 
+    height:max-content; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 40px;
+    background-color:rgb(93, 127,151);
+
+}
+/* end of hero */
+
+/* sections */
+
+#about_us .container{
+    background-color:rgb(242,249,252);
+    height: max-content;
+    justify-content: start;
+    padding-top: 20px;
+    
+
+}
+#Services,#Specializations,#Teachers{
+    width:100%;
+    height:max-content;
+}
+.container{
+    background-color:rgb(252, 213, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    height:max-content;
+
+
+}
+#about_us  .container p{
+    width: 90%;
+    margin: 20px auto;
+    font-size: 30px;
+}
+.container h1, .contact_info h1{
+    font-size: 15px; 
+    
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    margin:10px ;
+}
+#Services .container .service{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;  
+}
+#Services .container .service p{
+    padding-top :5px; 
+}
+#Specializations .container .title,#Teachers .container .title,#plans .container .title{
+    display: flex;
+    gap: 100px;
+    
+}
+#Specializations .container .title .special,#Teachers .container .title .teacher{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(221, 26, 26, 0.225);
+    padding: 10px;
+    border-radius:5px;
+    gap: 48px;
+    width:300px;
+}
+
+
+#Specializations .container .title .special .special h3{
+    font-size: 21px;
+    padding-bottom: 5px; 
+
+} 
+#Teachers .container .title  .teacher img{
+    width: 100px;
+    margin-top:10px ;
+    margin-left: 10px;
+    
+    
+}
+#plans .container .title  .card h3,.teacher h3{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#Specializations .container,#plans .container{
+    background-color:rgb(242,249,252);
+}
+.orange{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#plans .container .title .card img{
+    width:150px;
+    margin: 20px;
+    padding-left: 10px;
+    
+}
+#plans .container .title .card{
+    width:200px;
+    height:350px;
+    background-color: rgb(245, 222, 179);
+
+}
+#plans .container .title .card .green{
+    width:180px;
+    margin: 10px;
+    background-color:rgb(253, 233,140);
+    border: 1px solid yellow;
+}
+#plans .container .title .card ul{
+    list-style-type: disc;
+    padding-left: 30px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+}
+#plans .container .title .card .green p{ 
+    padding-left: 10px;
+    padding-top: 3px;
+}
+#plans .container .title .card h3{font-size: 20px;}
+
+/* contuct */
+.blue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+input,textarea{
+    width: 250px; 
+    height: 50px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+label{
+    display: block;
+
+} 
+/* submit */
+.button{
+    border:none;
+    width:max-content;
+    
+    height: max-content;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    
+    
+}
+.button:hover{
+    background-color:rgb(119, 116, 116);
+    font-style: italic;
+}
+/* end of submit */
+
+/* contact info */
+.contact_info{
+    height: max-content;
+    background-color:rgb(252, 213, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;  
+    
+}
+.contact_info .orange{
+    padding: 20px;
+    margin-bottom: 20px;
+    width:max-content;
+    height: max-content;
+    background-color:transparent;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height:max-content;
+    background-color:rgb(51, 51, 51);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    gap:20px;
+    padding:20px 0;
+    
+}
+/* my custom framework */
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+@media screen and (max-width=992px){
+    #Specializations .container .title .special{
+        width: 500px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
